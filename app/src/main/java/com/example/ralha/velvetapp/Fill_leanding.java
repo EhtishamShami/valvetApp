@@ -9,12 +9,15 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
@@ -25,7 +28,14 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
     Context context;
     Button submit;
 
-
+    private EditText itemStory;
+    private EditText itemYear;
+    private EditText itemBrand;
+    private EditText itemTitle;
+    private EditText itemRentalPrice;
+    private Spinner categoryList;
+    private Spinner colorList;
+    private Spinner sizeList;
 
 
     @Override
@@ -38,6 +48,16 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
         submit = findViewById(R.id.submitApp);
         submit.setOnClickListener(this);
 
+
+
+        itemStory= (EditText) findViewById(R.id.storyText);
+        itemBrand= (EditText) findViewById(R.id.itemBrand);
+        itemTitle= (EditText) findViewById(R.id.itemTitle);
+        itemRentalPrice= (EditText) findViewById(R.id.itemRentalPrice);
+        itemYear= (EditText) findViewById(R.id.itemYear);
+        categoryList= (Spinner) findViewById(R.id.category);
+        colorList= (Spinner) findViewById(R.id.color);
+        sizeList= (Spinner) findViewById(R.id.size);
 
 
         //or
@@ -74,6 +94,81 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
 
 
         }
+    }
+
+
+    // make it public so it is accessable in other class
+    public void AddItem(){
+        String story = itemStory.getText().toString().trim();
+        String brand = itemBrand.getText().toString().trim();
+        String title = itemTitle.getText().toString().trim();
+        String retailPrice = itemRentalPrice.getText().toString().trim();
+        String rentalPrice = itemRentalPrice.getText().toString().trim();
+        String year = itemYear.getText().toString().trim();
+        String category = categoryList.getSelectedItem().toString();
+        String color = colorList.getSelectedItem().toString();
+        String size = sizeList.getSelectedItem().toString();
+
+//        if(!TextUtils.isEmpty(story)){
+//            String id=  databaseItems.push().getKey();
+//            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
+//            databaseItems.child(id).setValue(item);
+//
+//            Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a story", Toast.LENGTH_SHORT).show();
+//        }
+
+        if(!TextUtils.isEmpty(brand)){
+
+        }else{
+            Toast.makeText(this, "You should enter a brand name", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(title)){
+
+        }else{
+            Toast.makeText(this, "You should enter a title", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(retailPrice)){
+
+        }else{
+            Toast.makeText(this, "You should enter retail price", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(rentalPrice)){
+
+        }else{
+            Toast.makeText(this, "You should enter rental price", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(year)){
+
+        }else{
+            Toast.makeText(this, "You should enter a year of purchase", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(category)){
+
+        }else{
+            Toast.makeText(this, "You should enter a category", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(size)){
+
+        }else{
+            Toast.makeText(this, "You should enter the size", Toast.LENGTH_SHORT).show();
+        }
+
+        if(!TextUtils.isEmpty(color)){
+
+        }else{
+            Toast.makeText(this, "You should enter the color", Toast.LENGTH_SHORT).show();
+        }
+
+
     }
 
 
@@ -147,7 +242,7 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
             {
 //                MainActivity mainActivityInstance = new MainActivity();
 //                mainActivityInstance.AddItem();
-
+                AddItem();
             }
 
         }
