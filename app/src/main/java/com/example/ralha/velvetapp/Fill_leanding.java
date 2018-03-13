@@ -19,6 +19,9 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -37,6 +40,7 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
     private Spinner colorList;
     private Spinner sizeList;
 
+    DatabaseReference databaseItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +52,7 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
         submit = findViewById(R.id.submitApp);
         submit.setOnClickListener(this);
 
-
+        databaseItems= FirebaseDatabase.getInstance().getReference();
 
         itemStory= (EditText) findViewById(R.id.storyText);
         itemBrand= (EditText) findViewById(R.id.itemBrand);
@@ -109,16 +113,19 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
         String color = colorList.getSelectedItem().toString();
         String size = sizeList.getSelectedItem().toString();
 
-//        if(!TextUtils.isEmpty(story)){
-//            String id=  databaseItems.push().getKey();
-//            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
-//            databaseItems.child(id).setValue(item);
-//
-//            Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
-//
-//        }else{
-//            Toast.makeText(this, "You should enter a story", Toast.LENGTH_SHORT).show();
-//        }
+        if(!TextUtils.isEmpty(story)){
+            String id=  databaseItems.push().getKey();
+            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
+            databaseItems.child(id).setValue(item);
+
+
+            Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
+
+            finish();
+
+        }else{
+            Toast.makeText(this, "You should enter a story", Toast.LENGTH_SHORT).show();
+        }
 
         if(!TextUtils.isEmpty(brand)){
 
@@ -240,9 +247,10 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
         if(view.getId() == R.id.submitApp){
             if(validateFields())
             {
+                AddItem();
 //                MainActivity mainActivityInstance = new MainActivity();
 //                mainActivityInstance.AddItem();
-                AddItem();
+
             }
 
         }

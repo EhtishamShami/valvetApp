@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -129,8 +130,21 @@ if (!isValidCCN(EditTextCCN))
 
         UserInformation userInformation = new UserInformation(name, address, CCN, CCV, nameOnCard, EndDate, phone);
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        databaserefernece.child(user.getUid()).setValue(userInformation);
-        Toast.makeText(this, "Saving ..", Toast.LENGTH_SHORT).show();
+        databaserefernece.child(user.getUid()).setValue(userInformation, new DatabaseReference.CompletionListener() {
+
+            @Override
+            public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                Toast.makeText(getApplicationContext(), "User Data Saved Sucessfully ..", Toast.LENGTH_SHORT).show();
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(ProfileActivity.this, LogInActivity.class));
+
+            }
+        });
+
+        Toast.makeText(getApplicationContext(), "Saving", Toast.LENGTH_SHORT).show();
+
+
 
 
 
@@ -173,7 +187,8 @@ if (!isValidCCN(EditTextCCN))
                 "(?<jcb>(?:2131|1800|35[0-9]{3})[0-9]{11}))$";
 
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher((CharSequence) ccn);
+        Matcher matcher = pattern.matcher((CharSequence) ccn.getText().toString().trim());
+
         return matcher.matches();
 
     }
@@ -192,7 +207,8 @@ if (!isValidCCN(EditTextCCN))
         // Error
      if (view == ButtonSave) {
             saveUserInformation();
-            }
+
+        }
 
     }
 }
