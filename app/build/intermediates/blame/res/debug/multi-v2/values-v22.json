@@ -1,74 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ralha\\Desktop\\Android\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
+            "outputFile": "E:\\Current_Projects\\valvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\135b53de56378cc84fa6dc6540a3ddf5\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "E:\\otherstuff\\VelvetApp\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Ehitshamshami\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\285e0d547f8c5119936ffa525db51298\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ShadenMHD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\3402440077d8e5b159c2c08563309a87\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\C:\\Users\\ralha\\Desktop\\New folder\\VelvetApp\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\135b53de56378cc84fa6dc6540a3ddf5\\res\\values-v22\\values-v22.xml",
-                    "from": {
-                        "startLines": "2,3,4,9",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,130,217,553",
-                        "endLines": "2,3,8,13",
-                        "endColumns": "74,86,12,12",
-                        "endOffsets": "125,212,548,896"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Usama Nasir\\Downloads\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Usama Nasir\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d9be7074ee7071fc0e42f40c85382996\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\Shami\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5bc93dc2aec30eaa4a5ca37305f82f96\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

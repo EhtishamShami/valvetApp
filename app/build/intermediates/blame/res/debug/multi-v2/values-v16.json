@@ -1,112 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\otherstuff\\VelvetApp\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "E:\\Current_Projects\\valvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Ehitshamshami\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\285e0d547f8c5119936ffa525db51298\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Ehitshamshami\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\28b378e675f57213f92d39ecea27a2bb\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ShadenMHD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\3402440077d8e5b159c2c08563309a87\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ShadenMHD\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\59f8ca050e1799c9342c058874f12523\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\C:\\Users\\ralha\\Desktop\\New folder\\VelvetApp\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\135b53de56378cc84fa6dc6540a3ddf5\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ShadenMHD\\Downloads\\VelvetApp\\C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\d6cc3230d9fc50d4141663f802d2e1e9\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\Usama Nasir\\Downloads\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Usama Nasir\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\42458376b9cf077886106c5ebfdd34bb\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Shami\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a82b8f269bd3781352743ce53d9c2d4c\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -116,41 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Usama Nasir\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d9be7074ee7071fc0e42f40c85382996\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ralha\\Desktop\\Android\\VelvetApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\d6cc3230d9fc50d4141663f802d2e1e9\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ralha\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\135b53de56378cc84fa6dc6540a3ddf5\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Shami\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5bc93dc2aec30eaa4a5ca37305f82f96\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

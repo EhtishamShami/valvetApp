@@ -34,17 +34,19 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.ralha.velvetapp.MainActivity" >
+        </activity>
+        <activity android:name="com.example.ralha.velvetapp.LogInActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.ralha.velvetapp.LogInActivity" />
         <activity android:name="com.example.ralha.velvetapp.ProfileActivity" />
-        <activity android:name="com.example.ralha.velvetapp.SearchBarActivity" />
         <activity android:name="com.example.ralha.velvetapp.filter" />
         <activity android:name="com.example.ralha.velvetapp.Fill_leanding" />
+        <activity android:name="com.example.ralha.velvetapp.HomeP" />
+        <activity android:name="com.example.ralha.velvetapp.HomePage" />
 
         <meta-data
             android:name="android.support.VERSION"

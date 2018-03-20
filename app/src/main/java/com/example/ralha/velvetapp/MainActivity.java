@@ -14,13 +14,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-//
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-//
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -28,6 +21,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+//
+//
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -122,79 +118,81 @@ DatabaseReference databaseItems;
 
 
     }
-    // make it public so it is accessable in other class
-    public void AddItem(){
-      String story = itemStory.getText().toString().trim();
-      String brand = itemBrand.getText().toString().trim();
-        String title = itemTitle.getText().toString().trim();
-        String retailPrice = itemRetailPrice.getText().toString().trim();
-        String rentalPrice = itemRentalPrice.getText().toString().trim();
-        String year = itemYear.getText().toString().trim();
-        String category = categoryList.getSelectedItem().toString();
-        String color = colorList.getSelectedItem().toString();
-        String size = sizeList.getSelectedItem().toString();
+//
+//    // make it public so it is accessable in other class
+//    public void AddItem(){
+//      String story = itemStory.getText().toString().trim();
+//      String brand = itemBrand.getText().toString().trim();
+//        String title = itemTitle.getText().toString().trim();
+//        String retailPrice = itemRetailPrice.getText().toString().trim();
+//        String rentalPrice = itemRentalPrice.getText().toString().trim();
+//        String year = itemYear.getText().toString().trim();
+//        String category = categoryList.getSelectedItem().toString();
+//        String color = colorList.getSelectedItem().toString();
+//        String size = sizeList.getSelectedItem().toString();
+//
+//        if(!TextUtils.isEmpty(story)){
+//            String id=  databaseItems.push().getKey();
+//            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
+//            databaseItems.child(id).setValue(item);
+//
+//            Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a story", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(brand)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a brand name", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(title)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a title", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(retailPrice)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter retail price", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(rentalPrice)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter rental price", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(year)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a year of purchase", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(category)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter a category", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(size)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter the size", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        if(!TextUtils.isEmpty(color)){
+//
+//        }else{
+//            Toast.makeText(this, "You should enter the color", Toast.LENGTH_SHORT).show();
+//        }
+//
+//
+//    }
 
-        if(!TextUtils.isEmpty(story)){
-            String id=  databaseItems.push().getKey();
-            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
-            databaseItems.child(id).setValue(item);
-
-            Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
-
-        }else{
-            Toast.makeText(this, "You should enter a story", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(brand)){
-
-        }else{
-            Toast.makeText(this, "You should enter a brand name", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(title)){
-
-        }else{
-            Toast.makeText(this, "You should enter a title", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(retailPrice)){
-
-        }else{
-            Toast.makeText(this, "You should enter retail price", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(rentalPrice)){
-
-        }else{
-            Toast.makeText(this, "You should enter rental price", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(year)){
-
-        }else{
-            Toast.makeText(this, "You should enter a year of purchase", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(category)){
-
-        }else{
-            Toast.makeText(this, "You should enter a category", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(size)){
-
-        }else{
-            Toast.makeText(this, "You should enter the size", Toast.LENGTH_SHORT).show();
-        }
-
-        if(!TextUtils.isEmpty(color)){
-
-        }else{
-            Toast.makeText(this, "You should enter the color", Toast.LENGTH_SHORT).show();
-        }
-
-
-    }
     // Register Method
 private void  registerUser(){
         String email = edittextEmail.getText().toString().trim();

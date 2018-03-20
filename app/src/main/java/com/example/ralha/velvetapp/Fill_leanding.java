@@ -19,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.ralha.velvetapp.model.ItemObject;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -85,6 +86,8 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
         startActivityForResult(intent, PICK_PHOTO_FOR_AVATAR);
     }
 
+    Bitmap selectedUri;
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -115,8 +118,14 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
 
         if(!TextUtils.isEmpty(story)){
             String id=  databaseItems.push().getKey();
-            Items item = new Items(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
-            databaseItems.child(id).setValue(item);
+
+            Items item = new Items(selectedUri,story, brand, title, year, retailPrice, rentalPrice, category, color, size);
+
+            ItemObject itemObject=new ItemObject(story, brand, title, year, retailPrice, rentalPrice, category, color, size);
+
+            Constant.mList.add(item);
+
+            databaseItems.child(id).setValue(itemObject);
 
 
             Toast.makeText(this, "Item added", Toast.LENGTH_SHORT).show();
@@ -225,7 +234,7 @@ public class Fill_leanding extends AppCompatActivity implements View.OnClickList
             Bitmap bitmap = BitmapFactory.decodeFileDescriptor(imageSource, null, o2);
 
             imgView.setImageBitmap(bitmap);
-
+            selectedUri=bitmap;
         } catch (FileNotFoundException e) {
             // handle errors
         }

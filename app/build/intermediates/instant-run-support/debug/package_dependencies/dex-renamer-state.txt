@@ -1,4 +1,4 @@
-#Sat Mar 03 19:48:17 AST 2018
-base.0=C\:\\Users\\ralha\\Desktop\\New folder\\VelvetApp\\VelvetApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+#Sun Mar 18 20:29:28 PKT 2018
+base.0=E\:\\Current_Projects\\valvetApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\otherstuff\VelvetApp\VelvetApp\app\src\main\assets"/><source path="E:\otherstuff\VelvetApp\VelvetApp\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\otherstuff\VelvetApp\VelvetApp\app\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Current_Projects\valvetApp\app\src\main\assets"/><source path="E:\Current_Projects\valvetApp\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Current_Projects\valvetApp\app\src\debug\assets"/></dataSet></merger>

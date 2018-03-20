@@ -1,10 +1,14 @@
 package com.example.ralha.velvetapp;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by rajwahalqurashi on 2018-03-04.
  */
 
 public class Items {
+
+    Bitmap image;
     String itemStory;
     String itemBrand;
     String itemTitle;
@@ -20,7 +24,7 @@ public class Items {
 
     }
 
-    public Items(String itemStory, String itemBrand, String itemTitle, String itemYear, String itemRetailPrice, String itemRentalPrice, String itemCategory, String itemColor, String itemSize) {
+    public Items(Bitmap image, String itemStory, String itemBrand, String itemTitle, String itemYear, String itemRetailPrice, String itemRentalPrice, String itemCategory, String itemColor, String itemSize) {
         this.itemStory = itemStory;
         this.itemBrand = itemBrand;
         this.itemTitle = itemTitle;
@@ -30,6 +34,15 @@ public class Items {
         this.itemCategory = itemCategory;
         this.itemColor = itemColor;
         this.itemSize = itemSize;
+        this.image=image;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 
     public String getItemStory() {
